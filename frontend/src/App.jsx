@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 /*
+I CHANGED THIS
 This is the starting point of our application. Here, we can begin coding 
 and transforming this page into whatever best suits our needs. 
 For example, we can start by creating a login page, home page, or an about section; 

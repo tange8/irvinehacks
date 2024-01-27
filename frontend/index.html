@@ -4,14 +4,36 @@ index.html works in conjunction with main.jsx to render your React application i
 It served as an html document that dynamically inserts React code from your application.
 -->
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- website icon that appears at the top of the browser tab -->
+    <link rel="icon" type="image/png" href="/icons/favicon.png" />
+    <!-- information abt the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <!-- page name that appears next to the icon -->
+    <title>PrepPal</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+   <body style="margin:0;">
+      <header>
+        <h1>PrepPal</h1>
+      </header>
+      <main>
+        <div class="slider">
+          <img src="SOME_IMAGES_LINKS">
+          <p>Description of what PrepPal will do and how it will help, can be mission statements</p>
+        </div>
+        <div class="inputsAndPrompts">
+          <div class="input1">
+            <p>INPUT PROMPT</p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+
+      </footer>
+   </body>
+
 </html>
