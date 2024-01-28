@@ -1,0 +1,447 @@
+{
+	"data": {
+		"mealPlan": [
+			{
+				"day": 7,
+				"date": "2024-02-03",
+				"calories": 1545.2779579556868,
+				"meals": [
+					{
+						"id": "TWVhbDoxODg4MDY4OTc=",
+						"calories": 460.7419468808535,
+						"meal": "breakfast",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Lentil Porridge With Mushrooms And Radish",
+							"id": "UmVjaXBlOjZjMDEyY2M3LWI1MjgtNDQ3Yy04Njc0LWE2MTUxZjI3ZjkxNA==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 460.74
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTg=",
+						"calories": 142.16039999999998,
+						"meal": "snack",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Creamy Kale Salad",
+							"id": "UmVjaXBlOjcxNzg2YjRmLWUzNGUtNGI1NC04NTM5LTc5NDgzYmYyNzE5OQ==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 142.16
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTk=",
+						"calories": 437.6752217493334,
+						"meal": "lunch",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Brazilian Fish Stew",
+							"id": "UmVjaXBlOjc4OWVhZjI0LTBhZTUtNDZlOS1iMmRjLWUzMjI3MDU1ZDZhNg==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 437.68
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY5MDA=",
+						"calories": 504.7003893255,
+						"meal": "dinner",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Salmon Cakes With Spinach Leaves",
+							"id": "UmVjaXBlOjBlMzgzMzNlLTU2ZWUtNDU1Mi05Zjc0LTExNmJjN2MzOGQ5Yw==",
+							"numberOfServings": 4,
+							"nutrientsPerServing": {
+								"calories": 504.7
+							}
+						}
+					}
+				]
+			},
+			{
+				"day": 6,
+				"date": "2024-02-02",
+				"calories": 1519.455112986569,
+				"meals": [
+					{
+						"id": "TWVhbDoxODg4MDY4OTM=",
+						"calories": 452.6140640220691,
+						"meal": "breakfast",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Broccoli Hazelnut Spread",
+							"id": "UmVjaXBlOmQ5ZDVhMjAwLTlhMjAtNGY3Mi05YjNlLWJmNjc0MWExZDY2YQ==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 452.61
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTQ=",
+						"calories": 215.30809192533334,
+						"meal": "snack",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Marinated Cherry Tomato And Herb Salad",
+							"id": "UmVjaXBlOmI5ZTBjMTUwLTJlNjMtNGZlZi1hMThlLWRjNzczNjFiNTBlZA==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 215.31
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTU=",
+						"calories": 596.1602070391667,
+						"meal": "lunch",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Best Instant Pot Chicken Cacciatore",
+							"id": "UmVjaXBlOjQ4ODI0ZmIzLTkyZTEtNDgzYS1hZmQ4LTQ1OWM1YzQ1OTZjOQ==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 596.16
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTY=",
+						"calories": 255.37274999999997,
+						"meal": "dinner",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Egyptian Lentil Soup",
+							"id": "UmVjaXBlOjgwYjA4NzU5LWUzNDItNDkyYy05OTQyLWY1MzJiZTJhY2JlMg==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 255.37
+							}
+						}
+					}
+				]
+			},
+			{
+				"day": 5,
+				"date": "2024-02-01",
+				"calories": 1587.155602870749,
+				"meals": [
+					{
+						"id": "TWVhbDoxODg4MDY4ODk=",
+						"calories": 583.135846165,
+						"meal": "breakfast",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Pumpkin Scrambled Eggs With Almonds And Apricot",
+							"id": "UmVjaXBlOjVlOTYzMGU4LWRkZjYtNGJlZS05OTc4LTBlYTA0NTA2ODU0NA==",
+							"numberOfServings": 2,
+							"nutrientsPerServing": {
+								"calories": 583.14
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTA=",
+						"calories": 214.96707075304067,
+						"meal": "snack",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Spicy Roasted Edamame",
+							"id": "UmVjaXBlOjlhOWYzNjEwLWRjZDUtNDViZC04ZjM2LTUyMjdhYzViYWFkYw==",
+							"numberOfServings": 4,
+							"nutrientsPerServing": {
+								"calories": 214.97
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTE=",
+						"calories": 548.644302251625,
+						"meal": "lunch",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Peanut Butter Chicken",
+							"id": "UmVjaXBlOjI5NTc3NDUwLTNmMDktNDU5My1iYzg4LTkwZTNlNTFjMzA2YQ==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 548.64
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4OTI=",
+						"calories": 240.4083837010833,
+						"meal": "dinner",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Salmon Teriyaki",
+							"id": "UmVjaXBlOjIzZDBmZWM4LWNjZmItNDZkMC04Mzg4LTJkYmZjNWFiMTMzMA==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 240.41
+							}
+						}
+					}
+				]
+			},
+			{
+				"day": 4,
+				"date": "2024-01-31",
+				"calories": 1578.7223714854065,
+				"meals": [
+					{
+						"id": "TWVhbDoxODg4MDY4ODU=",
+						"calories": 582.2960515195834,
+						"meal": "breakfast",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Zucchini Cocoa Pancakes",
+							"id": "UmVjaXBlOmM0NDc2NWU4LTc1ODQtNDcwMy1iODY2LWY1NjY5Zjg1YTcxZA==",
+							"numberOfServings": 2,
+							"nutrientsPerServing": {
+								"calories": 582.3
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4ODY=",
+						"calories": 203.6055989348787,
+						"meal": "snack",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Pesto Shrimp Salad",
+							"id": "UmVjaXBlOmEwZTVjNjQwLWJiZjktNDI1NC04ZGJhLWFhODVhMTM5ZGQ3MA==",
+							"numberOfServings": 2,
+							"nutrientsPerServing": {
+								"calories": 203.61
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4ODc=",
+						"calories": 532.4207908774443,
+						"meal": "lunch",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Thai Fish Cakes",
+							"id": "UmVjaXBlOmZkNGRkODYyLWY1YzktNDlkNS04NGVkLWY2NTlhNGFkYTYzYw==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 532.42
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4ODg=",
+						"calories": 260.3999301535,
+						"meal": "dinner",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Grilled Salmon With Spinach And Tomatoes",
+							"id": "UmVjaXBlOmEzODAwMWNmLTg1OGUtNDQxNy1iNTE1LTk2YzFiMmZjMzk2Zg==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 260.4
+							}
+						}
+					}
+				]
+			},
+			{
+				"day": 3,
+				"date": "2024-01-30",
+				"calories": 1537.2794028039264,
+				"meals": [
+					{
+						"id": "TWVhbDoxODg4MDY4ODE=",
+						"calories": 516.955089390916,
+						"meal": "breakfast",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Kale Shakshuka",
+							"id": "UmVjaXBlOjJmNTQyMDBmLTViZWItNDEyNC1iYjQ2LTQ0N2JmZmI1NDdjMQ==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 516.96
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4ODI=",
+						"calories": 209.87970175384376,
+						"meal": "snack",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Smoked Salmon Tartare",
+							"id": "UmVjaXBlOjhiODk1MWJhLWVkNmMtNGEwYi05Y2RlLTUyZjE4Yzk0MjM2ZQ==",
+							"numberOfServings": 4,
+							"nutrientsPerServing": {
+								"calories": 209.88
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4ODM=",
+						"calories": 514.4316496199999,
+						"meal": "lunch",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Falafel Salad With Lemon-Tahini Dressing",
+							"id": "UmVjaXBlOjNhNzdjMTRkLWRmMTYtNDJlYy1iY2E2LWI3YzFkNTM3YzY1OQ==",
+							"numberOfServings": 2,
+							"nutrientsPerServing": {
+								"calories": 514.43
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4ODQ=",
+						"calories": 296.0129620391667,
+						"meal": "dinner",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Instant Pot Chicken Tagine With Butternut Squash And Spinach",
+							"id": "UmVjaXBlOjJjMDMyNDBmLTMzYTktNDYxNS1hYmM3LTBmMzM4MWJhOWEyYw==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 296.01
+							}
+						}
+					}
+				]
+			},
+			{
+				"day": 2,
+				"date": "2024-01-29",
+				"calories": 1573.2064351659374,
+				"meals": [
+					{
+						"id": "TWVhbDoxODg4MDY4Nzc=",
+						"calories": 453.06004265666655,
+						"meal": "breakfast",
+						"numOfServings": 2,
+						"recipe": {
+							"name": "Chickpea Flour Omelette With Asparagus",
+							"id": "UmVjaXBlOjNlZDAzN2Y3LWQ4OTItNGNjYy1iMjhjLTU5ODQ2Y2NiMWNkMQ==",
+							"numberOfServings": 2,
+							"nutrientsPerServing": {
+								"calories": 226.53
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4Nzg=",
+						"calories": 220.5499,
+						"meal": "snack",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Easy Fruit Salad",
+							"id": "UmVjaXBlOmQ1Y2UzMWFkLTkwMjQtNDYyNS1hZDIyLTE4ZWIxYzc2ZTA0NQ==",
+							"numberOfServings": 4,
+							"nutrientsPerServing": {
+								"calories": 220.55
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4Nzk=",
+						"calories": 523.8416664842708,
+						"meal": "lunch",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Mediterranean Fish Stew With Garlic Toasts",
+							"id": "UmVjaXBlOjE4ODFiODUzLTQ2OTItNDM5MC05YmE4LTQxYzYzODk2YzI5MQ==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 523.84
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4ODA=",
+						"calories": 375.754826025,
+						"meal": "dinner",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Ajapsandali",
+							"id": "UmVjaXBlOjI0NjBhNmVmLWI5OGYtNDkwMS1hOTEyLTQ0ZWMxNzlhOGVjYw==",
+							"numberOfServings": 2,
+							"nutrientsPerServing": {
+								"calories": 375.75
+							}
+						}
+					}
+				]
+			},
+			{
+				"day": 1,
+				"date": "2024-01-28",
+				"calories": 1559.3645093499672,
+				"meals": [
+					{
+						"id": "TWVhbDoxODg4MDY4NzM=",
+						"calories": 528.462296454529,
+						"meal": "breakfast",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Kale And Ginger Smoothie",
+							"id": "UmVjaXBlOmI1N2RlZmVjLWNhYTAtNGFkYi05ZTEzLWU1MjA1ZWNmNTE5Yg==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 528.46
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4NzQ=",
+						"calories": 135.1475488573889,
+						"meal": "snack",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Sauerkraut Salad",
+							"id": "UmVjaXBlOjUyNmZkNDRmLTA4OTMtNDkyNC05MDNmLTY5MTljODgwMzU4Mg==",
+							"numberOfServings": 1,
+							"nutrientsPerServing": {
+								"calories": 135.15
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4NzU=",
+						"calories": 518.6504542424241,
+						"meal": "lunch",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Pumpkin And Lentil Soup",
+							"id": "UmVjaXBlOjhmYjBkZWQyLTZhN2MtNDEzNy1hMmQ5LTVjYzNjN2U1OTUwZg==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 518.65
+							}
+						}
+					},
+					{
+						"id": "TWVhbDoxODg4MDY4NzY=",
+						"calories": 377.104209795625,
+						"meal": "dinner",
+						"numOfServings": 1,
+						"recipe": {
+							"name": "Creamy Chicken Soup With Mushrooms And Kale",
+							"id": "UmVjaXBlOjU2ZDAyOGM1LTExYzUtNGIzNS04NjQwLWQ0NGNmNjJiNDIzZg==",
+							"numberOfServings": 3,
+							"nutrientsPerServing": {
+								"calories": 377.1
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}
