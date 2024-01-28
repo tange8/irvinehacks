@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Molengo');
 
 * {
-    margin: 0.5;
+    margin: 0.2;
     padding: 0;
     box-sizing: border-box;
   }
@@ -38,7 +38,7 @@
     border-radius: 0.7rem;
     padding: 2rem 2.5rem;
     background-color: rgba(0,0,0,0.5);
-    margin-top: -200px;
+    margin-top: -250px;
   }
 
   .intro h1 {
@@ -48,4 +48,5 @@
 
   .intro p {
     font-size: 1.30rem;
+    margin-bottom: 2rem;
   }
