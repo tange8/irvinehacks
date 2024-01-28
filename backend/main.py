@@ -11,8 +11,8 @@ import requests
 import ast
 import json
 
-from fastapi import FastAPI, status
-from pydantic import BaseModel
+from fastapi import FastAPI, status, Request
+from pydantic import BaseModel, ValidationError, validate_call
 
 class MealAttributes(BaseModel):
     breakfast_time: int
@@ -68,11 +68,30 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 
 # TODO: Add POST route for demo
-@app.post("/generatemealplanner")
-def generate_meal_plan(prepTime: MealAttributes):
+# @app.post("/generatemealplanner")
+# def generate_meal_plan(prepTime: MealAttributes):
+#     url = "https://production.suggestic.com/graphql"
+
+#     payload = '"{\"query\":\"mutation($breakfast: Int, $dinner: Int, $snack: Int, $lunch: Int) {\\n  generateMealPlan (\\n     maxTimeMinutes:{\\n      breakfast:$breakfast,\\n      dinner:$dinner,\\n      snack:$snack,\\n      lunch:$lunch\\n    }\\n  ) \\n    {\\n    success\\n    message\\n  }\\n}\",\"variables\":\"{\\n\\t\\\"breakfast\\\":' +  str(prepTime.breakfast_time) + ',\\n\\t\\\"snack\\\":' + str(prepTime.snack_time) + ',\\n\\t\\\"lunch\\\":' + str(prepTime.lunch_time) + ',\\n\\t\\\"dinner\\\":' + str(prepTime.dinner_time) + '\\n}\"}"'
+#     headers = {
+#         "User-Agent": "insomnia/8.6.0",
+#         "Content-Type": "application/json",
+#         "sg-user": "93cd96ab-0693-4382-9355-9285eb065bf0",
+#         "Authorization": "Token e022ada161fee90d3f32f6ad37bbb1eaf1cf64b1"
+#     }
+
+#     response = requests.request("POST", url, data=payload, headers=headers)
+#     print(f'THIS IS FROM OUR GENERATE MEAL PLAN{response.text}')
+ 
+#     return response.text
+
+@app.get("/generate20")
+def generate_20():
+
+
     url = "https://production.suggestic.com/graphql"
 
-    payload = '"{\"query\":\"mutation($breakfast: Int, $dinner: Int, $snack: Int, $lunch: Int) {\\n  generateMealPlan (\\n     maxTimeMinutes:{\\n      breakfast:$breakfast,\\n      dinner:$dinner,\\n      snack:$snack,\\n      lunch:$lunch\\n    }\\n  ) \\n    {\\n    success\\n    message\\n  }\\n}\",\"variables\":\"{\\n\\t\\\"breakfast\\\":' +  str(prepTime.breakfast_time) + ',\\n\\t\\\"snack\\\":' + str(prepTime.snack_time) + ',\\n\\t\\\"lunch\\\":' + str(prepTime.lunch_time) + ',\\n\\t\\\"dinner\\\":' + str(prepTime.dinner_time) + '\\n}\"}"'
+    payload = "{\"query\":\"mutation($breakfast: Int, $dinner: Int, $snack: Int, $lunch: Int) {\\n  generateMealPlan (\\n     maxTimeMinutes:{\\n      breakfast:$breakfast,\\n      dinner:$dinner,\\n      snack:$snack,\\n      lunch:$lunch\\n    }\\n  ) \\n    {\\n    success\\n    message\\n  }\\n}\",\"variables\":\"{\\n\\t\\\"breakfast\\\": 20,\\n\\t\\\"snack\\\": 20,\\n\\t\\\"lunch\\\": 20,\\n\\t\\\"dinner\\\": 20\\n}\"}"
     headers = {
         "User-Agent": "insomnia/8.6.0",
         "Content-Type": "application/json",
@@ -81,9 +100,78 @@ def generate_meal_plan(prepTime: MealAttributes):
     }
 
     response = requests.request("POST", url, data=payload, headers=headers)
-    print(f'THIS IS FROM OUR GENERATE MEAL PLAN{response.text}')
+
+    print(response.text)
+
+@app.get("/generate10")
+def generate_10():
+
+    url = "https://production.suggestic.com/graphql"
+
+    payload = "{\"query\":\"mutation($breakfast: Int, $dinner: Int, $snack: Int, $lunch: Int) {\\n  generateMealPlan (\\n     maxTimeMinutes:{\\n      breakfast:$breakfast,\\n      dinner:$dinner,\\n      snack:$snack,\\n      lunch:$lunch\\n    }\\n  ) \\n    {\\n    success\\n    message\\n  }\\n}\",\"variables\":\"{\\n\\t\\\"breakfast\\\": 10,\\n\\t\\\"snack\\\": 10,\\n\\t\\\"lunch\\\": 10,\\n\\t\\\"dinner\\\": 10\\n}\"}"
+    headers = {
+        "User-Agent": "insomnia/8.6.0",
+        "Content-Type": "application/json",
+        "sg-user": "93cd96ab-0693-4382-9355-9285eb065bf0",
+        "Authorization": "Token e022ada161fee90d3f32f6ad37bbb1eaf1cf64b1"
+    }
+
+    response = requests.request("POST", url, data=payload, headers=headers)
+
+    print(response.text)
+
+@app.get("/generate30")
+def generate_30():
+    url = "https://production.suggestic.com/graphql"
+
+    payload = "{\"query\":\"mutation($breakfast: Int, $dinner: Int, $snack: Int, $lunch: Int) {\\n  generateMealPlan (\\n     maxTimeMinutes:{\\n      breakfast:$breakfast,\\n      dinner:$dinner,\\n      snack:$snack,\\n      lunch:$lunch\\n    }\\n  ) \\n    {\\n    success\\n    message\\n  }\\n}\",\"variables\":\"{\\n\\t\\\"breakfast\\\": 30,\\n\\t\\\"snack\\\": 30,\\n\\t\\\"lunch\\\": 30,\\n\\t\\\"dinner\\\": 30\\n}\"}"
+    headers = {
+        "User-Agent": "insomnia/8.6.0",
+        "Content-Type": "application/json",
+        "sg-user": "93cd96ab-0693-4382-9355-9285eb065bf0",
+        "Authorization": "Token e022ada161fee90d3f32f6ad37bbb1eaf1cf64b1"
+    }
+
+    response = requests.request("POST", url, data=payload, headers=headers)
+
+    print(response.text)
+
+@app.get("/generate40")
+def generate_40():
+    url = "https://production.suggestic.com/graphql"
+
+    payload = "{\"query\":\"mutation($breakfast: Int, $dinner: Int, $snack: Int, $lunch: Int) {\\n  generateMealPlan (\\n     maxTimeMinutes:{\\n      breakfast:$breakfast,\\n      dinner:$dinner,\\n      snack:$snack,\\n      lunch:$lunch\\n    }\\n  ) \\n    {\\n    success\\n    message\\n  }\\n}\",\"variables\":\"{\\n\\t\\\"breakfast\\\": 40,\\n\\t\\\"snack\\\": 40,\\n\\t\\\"lunch\\\": 40,\\n\\t\\\"dinner\\\": 40\\n}\"}"
+    headers = {
+        "User-Agent": "insomnia/8.6.0",
+        "Content-Type": "application/json",
+        "sg-user": "93cd96ab-0693-4382-9355-9285eb065bf0",
+        "Authorization": "Token e022ada161fee90d3f32f6ad37bbb1eaf1cf64b1"
+    }
+
+    response = requests.request("POST", url, data=payload, headers=headers)
+
+    print(response.text)
+
+# @app.get("/generatemealplanner")
+# async def generate_meal_plan(my_request: Request, items: MealAttributes):
+#     url = "https://production.suggestic.com/graphql"
+#     result = await my_request.json()
+#     print(result)
+#     payload = '"{\"query\":\"mutation($breakfast: Int, $dinner: Int, $snack: Int, $lunch: Int) {\\n  generateMealPlan (\\n     maxTimeMinutes:{\\n      breakfast:$breakfast,\\n      dinner:$dinner,\\n      snack:$snack,\\n      lunch:$lunch\\n    }\\n  ) \\n    {\\n    success\\n    message\\n  }\\n}\",\"variables\":\"{\\n\\t\\\"breakfast\\\":' +  str(result["breakfast_time"]) + ',\\n\\t\\\"snack\\\":' + str(result["snack_time"]) + ',\\n\\t\\\"lunch\\\":' + str(result["lunch_time"]) + ',\\n\\t\\\"dinner\\\":' + str(result["dinner_time"]) + '\\n}\"}"'
+#     print(payload)
+#     headers = {
+#         "User-Agent": "insomnia/8.6.0",
+#         "Content-Type": "application/json",
+#         "sg-user": "93cd96ab-0693-4382-9355-9285eb065bf0",
+#         "Authorization": "Token e022ada161fee90d3f32f6ad37bbb1eaf1cf64b1"
+#     }
+
+#     response = requests.request("POST", url, data=payload, headers=headers)
+#     print(response.text)
+#     # print(f'THIS IS FROM OUR GENERATE MEAL PLAN{response.text}')
  
-    return response.text
+#     return response.text
+
 
 @app.get("/showrecipes")
 async def only_show_recipe():
@@ -134,7 +222,7 @@ async def show_meal_plans():
     }
 
     response = requests.request("POST", url, data=payload, headers=headers)
-    print(f'THIS IS FROM OUR SHOW MEAL PLAN{response.text}')
+    # print(f'THIS IS FROM OUR SHOW MEAL PLAN{response.text}')
     response_text = response.text.strip("\\")
     res = json.loads(response_text)
     if len(res) != 0 and len(res['data']['mealPlan']) != 0:
@@ -148,15 +236,24 @@ async def show_meal_plans():
                 final_dict['dinner'] = {'calories': meal['calories'], 'meal': meal['recipe']['name'], 'recipeId': meal['recipe']['id']}
             elif 'snack' in meal.values():
                 final_dict['snack'] = {'calories': meal['calories'], 'meal': meal['recipe']['name'], 'recipeId': meal['recipe']['id']}
-    for i, k in enumerate(final_dict):
-        print(i, k)
-    return final_dict
+    recipe_dict = {}
+    for i in final_dict:
+        # print(final_dict[i]['recipeId'])
+        recipe = await get_recipe(final_dict[i]['recipeId'])
+        recipe_dict[i] = recipe
+    # print(recipe_dict)
+    # print(final_dict)
+    return final_dict, recipe_dict
 
 async def get_recipe(id: str):
-    print("SHOULD RUN")
-    url = "https://production.suggestic.com/graphql"
 
-    payload = "{\"query\":\"{\\n  recipe(id: \\\"id\\\") {\\n    databaseId\\n    totalTime\\n    totalTimeInSeconds\\n    name\\n    rating\\n    numberOfServings\\n    ingredientLines\\n    ingredients {\\n      name\\n    }\\n    language\\n    courses\\n    cuisines\\n    source {\\n      siteUrl\\n      displayName\\n      recipeUrl\\n    }\\n    mainImage\\n    isPremium\\n    isFeatured\\n    author\\n    authorAvatar\\n    ingredientsCount\\n    favoritesCount\\n    isUserFavorite\\n    inUserShoppingList\\n    weightInGrams\\n    servingWeight\\n    isLogged\\n    relativeCalories {\\n      carbs\\n      fat\\n      protein\\n      fat\\n    }\\n    instructions\\n    nutritionalInfo {\\n      calories\\n      protein\\n      carbs\\n      fat\\n      sugar\\n      fiber\\n      saturatedFat\\n      monounsaturatedFat\\n      polyunsaturatedFat\\n      transFat\\n      cholesterol\\n      sodium\\n      potassium\\n      vitaminA\\n      vitaminC\\n      calcium\\n      iron\\n      netcarbs\\n    }\\n  }\\n}\\n\"}"
+    url = "https://production.suggestic.com/graphql"
+    # id = "UmVjaXBlOjZjMDEyY2M3LWI1MjgtNDQ3Yy04Njc0LWE2MTUxZjI3ZjkxNA=="
+    payload = "{\"query\":\"{\\n  recipe(id: \\\"UmVjaXBlOjZjMDEyY2M3LWI1MjgtNDQ3Yy04Njc0LWE2MTUxZjI3ZjkxNA==\\\") {\\n    databaseId\\n    totalTime\\n    totalTimeInSeconds\\n    name\\n    rating\\n    numberOfServings\\n    ingredientLines\\n    ingredients {\\n      name\\n    }\\n    language\\n    courses\\n    cuisines\\n    source {\\n      siteUrl\\n      displayName\\n      recipeUrl\\n    }\\n    mainImage\\n    isPremium\\n    isFeatured\\n    author\\n    authorAvatar\\n    ingredientsCount\\n    favoritesCount\\n    isUserFavorite\\n    inUserShoppingList\\n    weightInGrams\\n    servingWeight\\n    isLogged\\n    relativeCalories {\\n      carbs\\n      fat\\n      protein\\n      fat\\n    }\\n    instructions\\n    nutritionalInfo {\\n      calories\\n      protein\\n      carbs\\n      fat\\n      sugar\\n      fiber\\n      saturatedFat\\n      monounsaturatedFat\\n      polyunsaturatedFat\\n      transFat\\n      cholesterol\\n      sodium\\n      potassium\\n      vitaminA\\n      vitaminC\\n      calcium\\n      iron\\n      netcarbs\\n    }\\n  }\\n}\\n\"}"
+    payload2= '"{\"query\":\"{\\n  recipe(id: \\\"' + id + '\\\") {\\n    databaseId\\n    totalTime\\n    totalTimeInSeconds\\n    name\\n    rating\\n    numberOfServings\\n    ingredientLines\\n    ingredients {\\n      name\\n    }\\n    language\\n    courses\\n    cuisines\\n    source {\\n      siteUrl\\n      displayName\\n      recipeUrl\\n    }\\n    mainImage\\n    isPremium\\n    isFeatured\\n    author\\n    authorAvatar\\n    ingredientsCount\\n    favoritesCount\\n    isUserFavorite\\n    inUserShoppingList\\n    weightInGrams\\n    servingWeight\\n    isLogged\\n    relativeCalories {\\n      carbs\\n      fat\\n      protein\\n      fat\\n    }\\n    instructions\\n    nutritionalInfo {\\n      calories\\n      protein\\n      carbs\\n      fat\\n      sugar\\n      fiber\\n      saturatedFat\\n      monounsaturatedFat\\n      polyunsaturatedFat\\n      transFat\\n      cholesterol\\n      sodium\\n      potassium\\n      vitaminA\\n      vitaminC\\n      calcium\\n      iron\\n      netcarbs\\n    }\\n  }\\n}\\n\"}"'
+    payload2 = payload2[1:-1]
+    # print(payload)
+    # print(payload2)
     headers = {
         "User-Agent": "insomnia/8.6.0",
         "Content-Type": "application/json",
@@ -164,10 +261,40 @@ async def get_recipe(id: str):
         "Authorization": "Token e022ada161fee90d3f32f6ad37bbb1eaf1cf64b1"
     }
 
-    response = requests.request("POST", url, data=payload, headers=headers)
+    response = requests.request("POST", url, data=payload2, headers=headers)
+    response_text = response.text.strip("\\")
+    response_text = response_text.strip("\\n")
+    res = json.loads(response_text)
+    sorted_dict = {}
+    sorted_dict["name"] = res["data"]["recipe"]["name"]
+    sorted_dict["ingredients"] = res["data"]["recipe"]["ingredientLines"]
+    sorted_dict["image"] = res["data"]["recipe"]["mainImage"]
+    sorted_dict["directions"] = res["data"]["recipe"]["instructions"]
 
-    print(response.text)
-    return response.text
+    # print(sorted_dict)
+    
+    return sorted_dict
+
+@app.get("/showsinglerecipe")
+# def get_recipe(id: str):
+
+#     url = "https://production.suggestic.com/graphql"
+#     # id = "UmVjaXBlOjZjMDEyY2M3LWI1MjgtNDQ3Yy04Njc0LWE2MTUxZjI3ZjkxNA=="
+#     payload = "{\"query\":\"{\\n  recipe(id: \\\"UmVjaXBlOjZjMDEyY2M3LWI1MjgtNDQ3Yy04Njc0LWE2MTUxZjI3ZjkxNA==\\\") {\\n    databaseId\\n    totalTime\\n    totalTimeInSeconds\\n    name\\n    rating\\n    numberOfServings\\n    ingredientLines\\n    ingredients {\\n      name\\n    }\\n    language\\n    courses\\n    cuisines\\n    source {\\n      siteUrl\\n      displayName\\n      recipeUrl\\n    }\\n    mainImage\\n    isPremium\\n    isFeatured\\n    author\\n    authorAvatar\\n    ingredientsCount\\n    favoritesCount\\n    isUserFavorite\\n    inUserShoppingList\\n    weightInGrams\\n    servingWeight\\n    isLogged\\n    relativeCalories {\\n      carbs\\n      fat\\n      protein\\n      fat\\n    }\\n    instructions\\n    nutritionalInfo {\\n      calories\\n      protein\\n      carbs\\n      fat\\n      sugar\\n      fiber\\n      saturatedFat\\n      monounsaturatedFat\\n      polyunsaturatedFat\\n      transFat\\n      cholesterol\\n      sodium\\n      potassium\\n      vitaminA\\n      vitaminC\\n      calcium\\n      iron\\n      netcarbs\\n    }\\n  }\\n}\\n\"}"
+#     payload2= '"{\"query\":\"{\\n  recipe(id: \\\"' + id + '\\\") {\\n    databaseId\\n    totalTime\\n    totalTimeInSeconds\\n    name\\n    rating\\n    numberOfServings\\n    ingredientLines\\n    ingredients {\\n      name\\n    }\\n    language\\n    courses\\n    cuisines\\n    source {\\n      siteUrl\\n      displayName\\n      recipeUrl\\n    }\\n    mainImage\\n    isPremium\\n    isFeatured\\n    author\\n    authorAvatar\\n    ingredientsCount\\n    favoritesCount\\n    isUserFavorite\\n    inUserShoppingList\\n    weightInGrams\\n    servingWeight\\n    isLogged\\n    relativeCalories {\\n      carbs\\n      fat\\n      protein\\n      fat\\n    }\\n    instructions\\n    nutritionalInfo {\\n      calories\\n      protein\\n      carbs\\n      fat\\n      sugar\\n      fiber\\n      saturatedFat\\n      monounsaturatedFat\\n      polyunsaturatedFat\\n      transFat\\n      cholesterol\\n      sodium\\n      potassium\\n      vitaminA\\n      vitaminC\\n      calcium\\n      iron\\n      netcarbs\\n    }\\n  }\\n}\\n\"}"'
+#     payload2 = payload2[1:-1]
+#     print(payload)
+#     print(payload2)
+#     headers = {
+#         "User-Agent": "insomnia/8.6.0",
+#         "Content-Type": "application/json",
+#         "sg-user": "93cd96ab-0693-4382-9355-9285eb065bf0",
+#         "Authorization": "Token e022ada161fee90d3f32f6ad37bbb1eaf1cf64b1"
+#     }
+
+#     response = requests.request("POST", url, data=payload2, headers=headers)
+
+#     return response.text
 
 @app.get("/removemeal")
 def remove_meal_plan():
