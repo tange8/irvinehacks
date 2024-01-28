@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Modal from 'react-modal';
 import "./App.css";
 
 /*
@@ -31,10 +32,19 @@ function App() {
   };
 
   const [maxPreparationTime, setMaxPreparationTime] = useState(0);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  }
+  const closeModal = () => {
+    setModalIsOpen(false);
+  }
 
   return (
     <div className="app">
       <h1>Customize your meal plan!</h1>
+
       <div className="choice-grid"> 
         {dietaryChoices.map((choice) => (
           <div
@@ -52,9 +62,23 @@ function App() {
           </div>
         ))}
       </div>
+
       <label for="slider">Maximum Preparation Time</label>
       <input type='range' min='0' max = '200' step='5' value={maxPreparationTime} onChange={(e)=>setMaxPreparationTime(e.target.value)} style={{ width: '40%' }} />
       <h6>{maxPreparationTime}</h6>
+
+      <div className = "generate-modal">
+        <button onClick={openModal}>Generate!</button>
+      </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Generate Modal"
+      >
+          <div>
+          </div>
+      </Modal>
     </div> 
   );
 }

@@ -15,7 +15,7 @@
 }
 
 .background{
-  height:100vh;
+  height:100%;
   width:100%;
   background: rgb(139,199,166);
   background: radial-gradient(circle, rgba(139,199,166,1) 0%, rgba(139,149,199,1) 100%);
@@ -94,4 +94,22 @@ input[type="range"]::-webkit-slider-thumb {
 
 h6 {
   margin-top: 5px;
+}
+
+.generate-modal {
+  width: 100%;
+  align-items:center;
+  margin: 0;
+}
+
+.generate-modal button {
+  margin: 0;
+  background-color: rgba(109,122,195);
+}
+
+.generate-modal button:active, 
+.generate-modal button:focus,
+.generate-modal button:hover {
+  outline: none;
+  background-color: rgba(64,57,111,255);
 }
