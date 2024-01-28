@@ -1,6 +1,4 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 /*
@@ -32,8 +30,11 @@ function App() {
     }
   };
 
+  const [maxPreparationTime, setMaxPreparationTime] = useState(0);
+
   return (
     <div className="app">
+      <h1>Customize your meal plan!</h1>
       <div className="choice-grid"> 
         {dietaryChoices.map((choice) => (
           <div
@@ -51,7 +52,10 @@ function App() {
           </div>
         ))}
       </div>
-    </div>
+      <label for="slider">Maximum Preparation Time</label>
+      <input type='range' min='0' max = '200' step='5' value={maxPreparationTime} onChange={(e)=>setMaxPreparationTime(e.target.value)} style={{ width: '40%' }} />
+      <h6>{maxPreparationTime}</h6>
+    </div> 
   );
 }
 
