@@ -30,12 +30,26 @@ function App() {
       setSelectedChoices([...selectedChoices, label]);
     }
   };
+  // const GenerateContext = React.createContext({
+  //   generate: [], fetchMenuPlan: () => {}
+  // })
+  
+  // const fetchMenuPlan  = async() => {
+  //   const response = await fetch("http://localhost:5000/generate30")
+  // }
+  //   const menuplan = await response.json()
+  //   console.log(menuplan)
+  // }
+  // useEffect(() => {
+  //   fetchMenuPlan()
+  // }, [])
 
   const [maxPreparationTime, setMaxPreparationTime] = useState(0);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = () => {
+  const openModal = async() => {
     setModalIsOpen(true);
+    const response = await fetch("http://127.0.0.1:5000/generate30")
   }
   const closeModal = () => {
     setModalIsOpen(false);
